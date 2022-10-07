@@ -1,74 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/NotebookTest/vite.svg" />
-    <link rel="stylesheet"
-          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link href="/NotebookTest/vite.svg" rel="icon" type="image/svg+xml"/>
+    <link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css"
+          rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Vite App</title>
-    <script type="module" crossorigin src="/NotebookTest/assets/index.ba648885.js"></script>
-    <link rel="stylesheet" href="/NotebookTest/assets/index.f157d703.css">
-  </head>
-  <body>
-  <div id="topBanner">
+  <script type="module" crossorigin src="/NotebookTest/assets/index.1cd26a19.js"></script>
+  <link rel="stylesheet" href="/NotebookTest/assets/index.2758d59b.css">
+</head>
+<body>
+<div id="topBanner">
 
     <div id="logo">
-      <span id="lText1" class="lText">JU</span><span id="lText2" class="lText">BOOK</span>
+        <span class="lText" id="lText1">JU</span><span class="lText" id="lText2">BOOK</span>
     </div>
 
     <div id="insideSynBox">
 
-      <div id="file-name">
-        <input type="text"  id="fileName" />
-      </div>
+        <div id="file-name">
+            <input id="fileName" type="text"/>
+        </div>
 
-      <div id="menu-bar">
-        <div class="options" id="file-option">文件</div>
-        <div class="options" id="edit-option">编辑</div>
-        <div class="options" id="settings-option">设置</div>
-        <div class="optionAll" id="opa1">
-          <div class="option" id="op1">新建</div>
-          <div class="option" id="op2">保存</div>
-          <div class="option" id="op3">打印</div>
+        <div id="menu-bar">
+            <div class="options" id="file-option">文件</div>
+            <div class="options" id="edit-option">编辑</div>
+            <div class="options" id="settings-option">设置</div>
+            <div class="optionAll" id="opa1">
+                <div class="option" id="op1">新建</div>
+                <div class="option" id="op2">保存</div>
+                <div class="option" id="op3">打印</div>
+            </div>
+            <div class="optionAll" id="opa2">
+                <div class="option" id="op4">新增单元格</div>
+                <div class="option" id="op5">上移单元格</div>
+                <div class="option" id="op6">下移单元格</div>
+            </div>
+            <div class="optionAll" id="opa3">
+                <div class="option" id="op7">字体大小
+                    <div class="tertOptions" id="top1">
+                        <!--三级菜单-->
+                        <div class="option" id="op10">
+                            9px
+                        </div>
+                        <div class="option" id="op11">
+                            14px
+                        </div>
+                        <div class="option" id="op12">
+                            18px
+                        </div>
+                        <div class="option" id="op13">
+                            22px
+                        </div>
+                    </div>
+                </div>
+                <!--          html中插入的例如onclick的dom事件监听引用回调函数必须在该元素前的script标签内定义-->
+                <div class="option" id="op8">主题选择
+                    <div class="tertOptions" id="top2">
+                        <!--三级菜单-->
+                        <div class="option" id="op14">白色日间</div>
+                        <div class="option" id="op15">深邃黑夜</div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <div class="optionAll" id="opa2">
-          <div class="option" id="op4">新增单元格</div>
-          <div class="option" id="op5">上移单元格</div>
-          <div class="option" id="op6">下移单元格</div>
-        </div>
-        <div class="optionAll" id="opa3">
-          <div class="option" id="op7">字体大小</div>
-          <div class="option" id="op8">主题选择</div>
-        </div>
-        <div class="tertOptions" id="top1">
-          <!--三级菜单-->
-          <div class="option" id="op10">
-            9px
-          </div>
-          <div class="option" id="op11">
-            14px
-          </div>
-          <div class="option" id="op12">
-            18px
-          </div>
-          <div class="option" id="op13">
-            22px
-          </div>
-        </div>
-        <div class="tertOptions" id="top2">
-          <!--三级菜单-->
-          <div class="option" id="op14">白色日间</div>
-          <div class="option" id="op15">深邃黑夜</div>
-        </div>
-      </div>
 
     </div>
 
-  </div>
-  <div id="noteArea">
+    <div id="topEditBar">
+        <div id="topMoveUp" class="topEdit">
+            <img src="/NotebookTest/assets/arrow_up.f4c47703.svg" class="topIcon">
+            <span>
+                上移
+            </span>
+        </div>
+        <div id="topMoveDown" class="topEdit">
+            <img src="/NotebookTest/assets/arrow_down.d5d65364.svg" class="topIcon">
+            <span>
+                下移
+            </span>
+        </div>
+        <div id="topDelete" class="topEdit">
+            <img src="/NotebookTest/assets/delete.6c1e2b10.svg" class="topIcon">
+            <span>
+                删除
+            </span>
+        </div>
+        <div id="topCopy" class="topEdit">
+            <img src="/NotebookTest/assets/content_copy.7d15e594.svg" class="topIcon">
+            <span>
+                复制
+            </span>
+        </div>
+        <div id="topPlay" class="topEdit">
+            <img src="/NotebookTest/assets/play_arrow.eec857d2.svg" class="topIcon">
+            <span>
+                运行
+            </span>
+        </div>
 
-  </div>
-  
-  </body>
+    </div>
+
+</div>
+<div id="mainBanner">
+    <div id="leftSideBar">
+
+    </div>
+
+    <div id="textArea">
+<!--        <div class="splitArea" data-split-id="0">-->
+<!--            <div class="splitLine"></div>-->
+<!--            <div class="addCubeBtn">+ Markdown标记语言</div>-->
+<!--        </div>-->
+<!--        <div class="textCube" data-cube-id="0">-->
+<!--            <div class="highLighted">-->
+
+<!--            </div>-->
+<!--            <div class="cubeid">-->
+<!--                [0]:-->
+<!--            </div>-->
+<!--            <div class="typeCube" contenteditable="true">-->
+
+<!--            </div>-->
+<!--            <div class="inlineEditBar" contenteditable="false">-->
+<!--                <img class="inlineIcon" src="img/arrow_up.svg">-->
+<!--                <img class="inlineIcon" src="img/arrow_down.svg">-->
+<!--                <img class="inlineIcon" src="img/content_copy.svg">-->
+<!--                <img class="inlineIcon" src="img/delete.svg">-->
+<!--                <img class="inlineIcon" src="img/play_arrow.svg">-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+
+    <div id="rightSideBar">
+
+    </div>
+</div>
+
+</body>
 </html>
