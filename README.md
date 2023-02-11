@@ -1,3 +1,5 @@
 # NotebookTest
 
 最初的vite尝鲜项目，已经经过vite bundle构建过的dist文件，源文件请参考origin
+
+这个菜比不会用release发布部署到pages上，而且也没用自动化action创建环境构建部署，因此额外创了一个repo来上传手动构建的文件以此部署到Pages
